@@ -1,0 +1,8 @@
+[Unit]
+Description=YubiKey Touch Notifier daemon
+
+[Service]
+ExecStart=/bin/bash -c '~/.local/bin/yubikey-touch-notifier'
+
+[Install]
+WantedBy=default.target
